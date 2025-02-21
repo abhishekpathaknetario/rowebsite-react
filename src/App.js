@@ -20,7 +20,6 @@ import RatingsPage from "./components/RatingsPage/RatingsPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-import $ from "jquery";
 
 const App = () => {
   const router = createBrowserRouter([
