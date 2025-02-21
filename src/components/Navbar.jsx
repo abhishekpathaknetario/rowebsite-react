@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar position-fixed top-0  w-100 py-3 navbar-expand-lg navbar-light px-lg-5 bg-white z-1 ">
-      <div className="container-fluid px-lg-5 ">
+      <div className="container-fluid  gap-4 px-lg-5 ">
         <button
           className="navbar-toggler "
           type="button"
@@ -28,25 +28,18 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </Link>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-
-          <ul className="navbar-nav  fw-semibold gap-1">
+        <div className="collapse  navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav fw-semibold gap-3">
             <li className="nav-item">
               <NavLink
                 className={(e) => {
                   return e.isActive
-                    ? "text-primary  nav-link  border-2 border-bottom border-primary"
+                    ? "text-primary nav-link  border-2 border-bottom border-primary "
                     : "nav-link ";
                 }}
                 to="/"
-
               >
-                <button
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav">
-                  Home
-                </button>
+                Home
               </NavLink>
             </li>
 
@@ -55,16 +48,11 @@ const Navbar = () => {
                 className={(e) => {
                   return e.isActive
                     ? "text-primary nav-link  border-2 border-primary border-bottom"
-                    : "nav-link";
+                    : "nav-link ";
                 }}
                 to="/spareparts"
               >
-                <button
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav">
-                  Spare Parts
-                </button>
+                Spare Parts
               </NavLink>
             </li>
 
@@ -77,13 +65,7 @@ const Navbar = () => {
                 }}
                 to="/services"
               >
-                <button
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav">
-                  Services
-                </button>
-
+                Services
               </NavLink>
             </li>
 
@@ -96,17 +78,11 @@ const Navbar = () => {
                 }}
                 to="/contactus"
               >
-                <button
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav">
-                  Contact
-                </button>
-
+                Contact
               </NavLink>
             </li>
 
-            <li className="nav-item mb-3">
+            <li className="nav-item ">
               <NavLink
                 className={(e) => {
                   return e.isActive
@@ -115,17 +91,11 @@ const Navbar = () => {
                 }}
                 to="/payment"
               >
-                <button
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav">
-                  Payment
-                </button>
-
+                Payment
               </NavLink>
             </li>
           </ul>
-        </div >
+        </div>
 
         <div className="d-flex align-items-center">
           <a className="btncall" href="tel:+918006225800" target="_blank">
