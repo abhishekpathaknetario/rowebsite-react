@@ -1,0 +1,11 @@
+.btncall {
+  color: white;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+}
+.btn-primary:hover .btncall {
+  color: #0d6efd !important;
+}
+.btnwhats {
+  text-decoration: none;
+}

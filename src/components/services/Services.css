@@ -1,0 +1,24 @@
+@media (min-width: 900px) {
+  .service-heading {
+    font-size: 3.2rem;
+    width: 75%;
+  }
+  .service_info {
+    margin: 15px 0px;
+    font-size: 1.5rem;
+  }
+  .service-desc {
+    width: 75%;
+    font-size: 1rem;
+  }
+}
+
+.service-desc {
+  font-size: 0.8rem;
+  font-size: 1rem;
+}
+.service_info {
+  margin: 15px 0px;
+  padding: 0;
+  /* padding: 5rem 5px; */
+}

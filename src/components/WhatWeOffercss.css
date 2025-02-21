@@ -1,0 +1,69 @@
+.before-element {
+  position: relative;
+}
+.readmore:hover {
+  color: #0d6efd;
+}
+
+.serv-cards {
+  border-radius: 15px !important;
+  padding: 0px 5px;
+}
+.service-card-text {
+  font-size: 0.8rem;
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  .serv-cards {
+    height: 250px;
+    font-size: 10px;
+  }
+  .serv-cards img {
+    width: 35px;
+  }
+
+  .card-subtitle {
+    font-size: 15px;
+  }
+  .before-element::before {
+    content: url("../assets/Images/vctblue.png"); /* URL of the image */
+    position: absolute; /* Optional: For precise positioning */
+    left: -22%; /* Adjust to position image on the left */
+    top: -28px; /* Center vertically */
+    transform: scale(-50%);
+  }
+}
+
+.serv-cards {
+  border-radius: 15px !important;
+  padding: 0px 5px;
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  .serv-cards {
+    height: 250px;
+    font-size: 10px;
+  }
+  .serv-cards img {
+    width: 35px;
+  }
+
+  .card-subtitle {
+    font-size: 15px;
+  }
+}
+
+.before-element::before {
+  content: url("../assets/Images/vctblue.png"); /* URL of the image */
+  position: absolute; /* Optional: For precise positioning */
+  left: -35%; /* Adjust to position image on the left */
+  top: -28px; /* Center vertically */
+  transform: scale(-30%);
+}
+.card-paragraph {
+  display: -webkit-box; /* Required for webkit-based browsers */
+  -webkit-box-orient: vertical; /* Specifies vertical orientation */
+  overflow: hidden; /* Hides the overflowing text */
+  text-overflow: ellipsis; /* Adds the "..." at the end */
+  -webkit-line-clamp: 7; /* Limits text to 7 lines */
+  max-height: calc(1.2em * 7); /* Adjust based on line height */
+  line-height: 1.2em; /* Set the desired line height */
+}

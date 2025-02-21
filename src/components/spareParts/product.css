@@ -1,0 +1,30 @@
+.item-paragraph {
+  display: -webkit-box; /* Required for webkit-based browsers */
+  -webkit-box-orient: vertical; /* Specifies vertical orientation */
+  overflow: hidden; /* Hides the overflowing text */
+  text-overflow: ellipsis; /* Adds the "..." at the end */
+  -webkit-line-clamp: 7; /* Limits text to 7 lines */
+  max-height: calc(1.2em * 7); /* Adjust based on line height */
+  line-height: 1.2em; /* Set the desired line height */
+}
+@media (max-width: 600px) {
+  .addcart {
+    font-size: 0.5rem;
+  }
+  .card-title {
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text {
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

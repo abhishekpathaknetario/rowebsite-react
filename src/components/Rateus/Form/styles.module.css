@@ -1,0 +1,37 @@
+.form {
+  background-color: #ebebeb;
+  padding: 15px 50px;
+  width: 70%;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .form {
+    background-color: #ebebeb;
+    padding: 30px 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    background-color: #ebebeb;
+    padding: 30px 20px;
+  }
+}
