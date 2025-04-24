@@ -16,75 +16,52 @@ import "./btn.css";
 
 const BrandsArea = () => {
   return (
-    <div className="d-flex my-3">
-      <div className="container  d-flex flex-column align-items-center  ">
-        <p className="mt-5 mb-4 fw-bold  fw-semibold fs-3 text-center text-primary ">
+    <div className="brands-area d-flex my-3">
+      <div className="container d-flex flex-column align-items-center">
+        <p className="mt-5 mb-4 fw-bold fs-3 text-center text-primary">
           Brand Deals For Services
         </p>
 
-        <div className="brands-container ">
-          <div className="brands  sliding">
-            <div className="col-2">
-              <img src={Brand1} alt="Brand 1" />
-            </div>
-            <div className="col-2">
-              <img src={Brand2} alt="Brand 2" />
-            </div>
-            <div className="col-2">
-              <img src={Brand3} alt="Brand 3" />
-            </div>
-            <div className="col-2">
-              <img src={Brand4} alt="Brand 4" />
-            </div>
-            <div className="col-2">
-              <img src={Brand5} alt="Brand 5" />
-            </div>
-            <div className="col-2">
-              <img src={Brand6} alt="Brand 6" />
-            </div>
-
-            {/* Duplicate images for seamless scrolling */}
-            <div className="col">
-              <img src={Brand1} alt="Brand 1" />
-            </div>
-            <div className="col">
-              <img src={Brand2} alt="Brand 2" />
-            </div>
-            <div className="col">
-              <img src={Brand3} alt="Brand 3" />
-            </div>
-            <div className="col">
-              <img src={Brand4} alt="Brand 4" />
-            </div>
-            <div className="col">
-              <img src={Brand5} alt="Brand 5" />
-            </div>
-            <div className="col">
-              <img src={Brand6} alt="Brand 6" />
-            </div>
+        <div className="brands-container position-relative overflow-hidden">
+          <div className="brands sliding d-flex">
+            {[Brand1, Brand2, Brand3, Brand4, Brand5, Brand6].map((brand, index) => (
+              <div className="brand-item col-2" key={index}>
+                <img src={brand} alt={`Brand ${index + 1}`} className="img-fluid" />
+              </div>
+            ))}
+            {[Brand1, Brand2, Brand3, Brand4, Brand5, Brand6].map((brand, index) => (
+              <div className="brand-item col-2" key={`duplicate-${index}`}>
+                <img src={brand} alt={`Brand ${index + 1}`} className="img-fluid" />
+              </div>
+            ))}
           </div>
         </div>
 
-        <span className="px-0  px-lg-5 gap-3 d-flex align-items-center">
-          <a className="btncall" href="tel:+918006225800" target="_blank" rel="noreferrer">
-            <button className="btn gap-2 d-flex align-items-center my-3 px-3 container  btn-primary rounded-pill ">
+        <div className="contact-buttons d-flex gap-3 align-items-center mt-4">
+          <a
+            className="btncall"
+            href="tel:+918006225800"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="btn d-flex align-items-center px-4 py-2 btn-primary rounded-pill shadow">
               <FontAwesomeIcon icon={faPhone} />
-              <span> Call Us</span>
+              <span className="ms-2">Call Us</span>
             </button>
           </a>
 
           <a
-            href=" https://wa.me/+918006225800"
+            href="https://wa.me/+918006225800"
             className="btnwhats"
             target="_blank"
+            rel="noreferrer"
           >
-            <button className="btn gap-2 d-flex align-items-center my-3 px-3 container  btn-success rounded-pill ">
+            <button className="btn d-flex align-items-center px-4 py-2 btn-success rounded-pill shadow">
               <FontAwesomeIcon icon={faWhatsapp} />
-              {" "}
-              <span> Whatsapp</span>
+              <span className="ms-2">Whatsapp</span>
             </button>
           </a>
-        </span>
+        </div>
       </div>
     </div>
   );

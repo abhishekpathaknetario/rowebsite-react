@@ -45,7 +45,7 @@ const Spare = () => {
                     <FontAwesomeIcon icon={faPhone} />
                     <a
                       className="btncall"
-                      href="tel:5551234567"
+                      href="tel:+918006225800"
                       target="_blank"
                     >
                       <span> Call Us</span>
@@ -55,9 +55,7 @@ const Spare = () => {
                   <button className="btn gap-2 d-flex align-items-center my-3 px-3 container  btn-success rounded-pill ">
                     <FontAwesomeIcon icon={faWhatsapp} />
                     <a
-                      href="  https://wa.me/
-                                          
-                                       "
+                      href="https://wa.me/+918006225800"
                       className="btnwhats"
                       target="_blank"
                     >

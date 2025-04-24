@@ -1,5 +1,7 @@
 import React from "react";
 import Aman from "../assets/Images/Amar.png";
+import mukesh from "../assets/Images/mukesh.jpg";
+import raghav from "../assets/Images/raghav.jpg";
 import Googel from "../assets/Images/symbolgoogle.png";
 import Stars from "../assets/Images/Stars.png";
 import "./Ratings.css";
@@ -44,26 +46,25 @@ function Ratings() {
                 src={Googel}
                 style={{ width: "55px" }}
                 className="my-3"
-                
+
               />
               <img
                 src={Stars}
                 style={{ width: "85px" }}
                 className="my-2"
                 alt=""
-                
+
               />
 
               <p className="card-text my-3" style={{ fontSize: "14px" }}>
-                Excellent service at  in Noida! Great product range,
-                helpful staff, and quick installation. Highly recommend!
+                The staff was very knowledgeable and guided me well. Installation was quick and professional!
               </p>
               <div className="d-flex flex-row align-items-center justify-content-around w-100  ">
                 <div>
-                  <img src={Aman} style={{ width: "45px" }} />
+                  <img src={raghav} style={{ width: "45px" }} />
                 </div>
                 <div>
-                  <h6 style={{ fontSize: "12px", marginTop: "10px" }}>Aman</h6>
+                  <h6 style={{ fontSize: "12px", marginTop: "10px" }}>Raghav</h6>
                   <p style={{ fontSize: "10px" }}>22/12/2024</p>
                 </div>
               </div>
@@ -84,14 +85,14 @@ function Ratings() {
                 src={Googel}
                 style={{ width: "60px" }}
                 className="my-3"
-                
+
               />
               <img
                 src={Stars}
                 style={{ width: "100px" }}
                 className="my-2"
                 alt=""
-                
+
               />
 
               <p className="card-text my-4" style={{ fontSize: "17px" }}>
@@ -104,7 +105,7 @@ function Ratings() {
                 </div>
                 <div>
                   <h6 style={{ fontSize: "18px", marginTop: "14px" }}>Aman</h6>
-                  <p style={{ fontSize: "14px" }}>22/12/2024</p>
+                  <p style={{ fontSize: "14px" }}>22/01/2025</p>
                 </div>
               </div>
             </div>
@@ -124,27 +125,26 @@ function Ratings() {
                 src={Googel}
                 style={{ width: "55px" }}
                 className="my-3"
-                
+
               />
               <img
                 src={Stars}
                 style={{ width: "85px" }}
                 className="my-2"
                 alt=""
-                
+
               />
 
               <p className="card-text my-3" style={{ fontSize: "14px" }}>
-                Excellent service at in Noida! Great product range,
-                helpful staff, and quick installation. Highly recommend!
+                They helped me pick the right model and had it installed the same day!
               </p>
               <div className="d-flex flex-row align-items-center justify-content-around w-100  ">
                 <div>
-                  <img src={Aman} style={{ width: "45px" }} />
+                  <img src={mukesh} style={{ width: "45px" }} />
                 </div>
                 <div>
-                  <h6 style={{ fontSize: "12px", marginTop: "10px" }}>Aman</h6>
-                  <p style={{ fontSize: "10px" }}>22/12/2024</p>
+                  <h6 style={{ fontSize: "12px", marginTop: "10px" }}>Mukesh</h6>
+                  <p style={{ fontSize: "10px" }}>02/04/2025</p>
                 </div>
               </div>
             </div>

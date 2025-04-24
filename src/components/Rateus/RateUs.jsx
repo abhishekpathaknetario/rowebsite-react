@@ -46,7 +46,7 @@ function RateUs() {
               <IoIosStarOutline />
               <span className="ms-2 text-black">4.0</span>
             </span>
-            <span className="fw-bold">Laddu</span>
+            <span className="fw-bold">Dinesh Kumar</span>
             <span style={{ color: "#979497" }} className="fw-semibold">
               {todayDate}
             </span>

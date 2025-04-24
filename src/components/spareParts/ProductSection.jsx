@@ -27,6 +27,8 @@ import product12 from "../spareParts/CardsImage/CarbonSedimentSpunFilters.png";
 
 import product13 from "../spareParts/CardsImage/CarbonSedimentSpunFilters.png";
 
+import product14 from "../spareParts/CardsImage/advfilter.jpg";
+import product15 from "../spareParts/CardsImage/premfil.jpg";
 
 const products = [
   { id: 1, image: product1, title: "Carbon Filter", price: "₹450" },
@@ -82,6 +84,18 @@ const products = [
     title: "Carbon, Sediment, Membrane, Spun Filters",
     price: "₹2250",
   },
+  {
+    id: 14,
+    image: product14,
+    title: "Advanced Carbon Filter",
+    price: "₹500",
+  },
+  {
+    id: 15,
+    image: product15,
+    title: "Premium Sediment Filter",
+    price: "₹550",
+  },
 ];
 
 const ProductCard = ({ product }) => (
@@ -136,25 +150,35 @@ const ProductSection = () => {
   );
 
   return (
-    <div>
+    <div className="product-section-container">
       <input
         type="text"
         placeholder="Search products"
-        className="w-100 px-2 py-2 rounded-2 fw-semibold text-dark"
+        className="search-bar w-100 px-3 py-2 rounded-3 fw-semibold text-dark border border-primary"
         value={searchTerm}
         onChange={handleSearchChange}
+        style={{
+          marginBottom: "20px",
+          boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 6px",
+        }}
       />
       <div
-        className="w-100 w-md-50 w-lg-25  overflow-y-scroll my-5"
-        style={{ height: "70vh" }}
+        className="product-list-container w-100 overflow-y-scroll my-5"
+        style={{
+          height: "70vh",
+          padding: "10px",
+          backgroundColor: "#f9f9f9",
+          borderRadius: "10px",
+          boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 6px",
+        }}
       >
-        <div className="product-list row  d-flex justify-content-center  row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div className="product-list w-100 row d-flex justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {filteredProducts.map((product) => (
             <div
-              className="col  d-flex justify-content-center"
+              className="col mb-3 d-flex justify-content-center"
               key={product.id}
             >
-              <ProductCard product={product} />{" "}
+              <ProductCard product={product} />
             </div>
           ))}
         </div>

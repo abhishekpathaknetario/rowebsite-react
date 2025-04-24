@@ -2,6 +2,7 @@
   color: white;
   transition: 0.5s ease-in-out;
   text-decoration: none;
+  min-width: 60px;
 }
 .btn-primary:hover .btncall {
   color: #0d6efd !important;

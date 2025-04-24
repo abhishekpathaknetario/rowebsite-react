@@ -32,7 +32,7 @@ const Ratings = () => {
           <div className={styles["progress-bar"]}>
             <div className={styles.progress}></div>
           </div>
-          <p className="m-0">0 Ratings</p>
+          <p className="m-0">2 Ratings</p>
         </div>
         {/* RATING 2.0 */}
 
@@ -53,7 +53,7 @@ const Ratings = () => {
           <div className={styles["progress-bar"]}>
             <div className={styles.progress}></div>
           </div>
-          <p className="m-0">0 Ratings</p>
+          <p className="m-0">8 Ratings</p>
         </div>
         {/* RATING 3.0 */}
 
@@ -74,7 +74,7 @@ const Ratings = () => {
           <div className={styles["progress-bar"]}>
             <div className={styles.progress}></div>
           </div>
-          <p className="m-0">0 Ratings</p>
+          <p className="m-0">9 Ratings</p>
         </div>
 
         {/* RATING 4.0 */}
@@ -95,7 +95,7 @@ const Ratings = () => {
           <div className={styles["progress-bar"]}>
             <div className={styles.progress}></div>
           </div>
-          <p className="m-0">0 Ratings</p>
+          <p className="m-0">50 Ratings</p>
         </div>
 
         {/* RATING 5.0 */}
@@ -116,7 +116,7 @@ const Ratings = () => {
           <div className={styles["progress-bar"]}>
             <div className={styles.progress}></div>
           </div>
-          <p className="m-0">0 Ratings</p>
+          <p className="m-0 flex-1">40 Ratings</p>
         </div>
       </div>
     </div>

@@ -11,6 +11,7 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -31,6 +32,24 @@ const Footer = () => {
                 and reliable after-sales support to ensure safe and clean
                 drinking water for your home and office.
               </p>
+            </span>
+            <p className="mb-2">Reach us</p>
+            <span className="d-flex flex-column">
+              <a href="mailto:dravyaro@gmail.com" target="_blank" className="d-flex  align-items-center gap-2">
+                <span className="d-flex text-primary align-items-center gap-1 fw-semibold">
+                  <FontAwesomeIcon icon={faEnvelope} /> Mail Us:
+                </span>
+                dravyaro@gmail.com
+              </a>
+              <a
+                href="tel:/+918006225800"
+                target="_blank" rel="noreferrer" className="d-flex  align-items-center gap-2 "
+              >
+                <span className="d-flex  text-primary align-items-center gap-1 fw-semibold">
+                  <FontAwesomeIcon icon={faPhone} /> Call Us:
+                </span>
+                +918006225800
+              </a>
             </span>
           </div>
           <div className="right">
@@ -107,19 +126,19 @@ const Footer = () => {
               </span>
               <span className="d-flex align-items-end ">
                 <button className="footer-icon d-flex">
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <Link to="/contactus">
                     <FontAwesomeIcon icon={faFacebook} />
-                  </a>
+                  </Link>
                 </button>
                 <button className="d-flex footer-icon">
-                  <a href="https://x.com/__x" target="_blank">
+                  <Link to="/contactus">
                     <FontAwesomeIcon icon={faTwitter} />
-                  </a>
+                  </Link>
                 </button>
                 <button className="d-flex footer-icon">
-                  <a href="https://instagram.com" target="_blank">
+                  <Link to="/contactus">
                     <FontAwesomeIcon icon={faInstagram} />
-                  </a>
+                  </Link>
                 </button>
               </span>
             </div>
@@ -129,8 +148,17 @@ const Footer = () => {
         <div className="border-top text-center pt-4  border-secondary mt-5">
           <p>
             All rights reserved by{" "}
-            <span className="text-primary">© Netario innovations</span> private
-            limited
+            <span>
+              <a
+                className="text-primary"
+                href="https://netario.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                © Netario innovations
+              </a>
+            </span>{" "}
+            private limited
           </p>
         </div>
       </footer>

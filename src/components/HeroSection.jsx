@@ -79,7 +79,11 @@ const HeroSection = () => {
       <Ratings />
       <BrandsArea />
       <ContactUs />
-      <RateUs />
+      <div className=" d-flex justify-content-center">
+        <div>
+          <RateUs />
+        </div>
+      </div>
     </>
   );
 };
